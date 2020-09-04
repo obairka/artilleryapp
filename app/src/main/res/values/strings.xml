@@ -1,0 +1,24 @@
+
+<resources>
+
+    <string name="app_name">Артиллерия второй мировой войны</string>
+    <string name="menu_filter">Отфильтровать</string>
+    <string name="my_bookmarks">Избранное</string>
+    <string name="artillery_list_title">Артиллерия СССР</string>
+    <string name="available">Выберите</string>
+    <string name="artillery_details_title">Детали</string>
+    <string name="add_artillery">Добавить</string>
+    <string name="added_artillery_to_bookmarks">Добавлено в избранное</string>
+    <string name="bookmarks_empty">Ваша коллекция пуста</string>
+    <string name="artillery_date_header">Добавлено</string>
+    <string name="last_updated_date_header">Last Updated</string>
+    <string name="menu_item_share_artillery">Поделиться</string>
+    <string name="share_text_artillery">Посмотри %s</string>
+
+    <!-- String plurals and their related prefix / suffix strings -->
+
+    <!-- Accessibility -->
+    <string name="a11y_artillery_item_image" >Picture of artillery</string>
+    <string name="artillery_detail_image_content_description">Image of artillery</string>
+
+</resources>

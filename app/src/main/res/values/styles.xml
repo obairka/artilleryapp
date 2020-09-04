@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- To see how these attributes are used, please visit https://material.io/develop/android/theming/color/ -->
+    <style name="Base.Theme.artilleryapp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/artilleryapp_green_500</item>
+        <item name="colorOnPrimary">@color/artilleryapp_yellow_500</item>
+        <item name="colorPrimaryDark">@color/artilleryapp_green_700</item>
+        <item name="colorOnSurface">@color/artilleryapp_black</item>
+        <item name="colorAccent">@color/artilleryapp_green_700</item>
+        <item name="colorSurface">@color/artilleryapp_gray_50</item>
+        <item name="colorSecondary">@color/artilleryapp_yellow_500</item>
+        <item name="android:colorBackground">@color/artilleryapp_green_500</item>
+    </style>
+
+    <style name="Theme.artilleryapp" parent="Base.Theme.artilleryapp"/>
+
+    <style name="Theme.artilleryapp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.artilleryapp.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.ActionBar"/>
+
+    <style name="TextAppearance.artilleryapp.Toolbar.Text" parent="TextAppearance.MaterialComponents.Headline5" >
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+</resources>
