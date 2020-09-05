@@ -108,11 +108,11 @@
                     android:layout_marginEnd="@dimen/margin_small"
                     android:textIsSelectable="true"
                     android:minHeight="@dimen/artillery_description_min_height"
+                    app:renderHtml="@{viewModel.artillery.description}"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/artillery_detail_name"
-                    app:renderHtml="@{viewModel.artillery.description}"
-                    tools:text="Details about the plant" />
+                    tools:text="Details" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -130,7 +130,7 @@
             app:isFabGone="@{viewModel.exists}"
             app:layout_anchor="@id/appbar"
             app:layout_anchorGravity="bottom|end"
-            app:srcCompat="@drawable/ic_plus" />
+            app:srcCompat="@drawable/ic_my_bookmarks_active" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

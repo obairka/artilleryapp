@@ -2,7 +2,7 @@ package com.santaev.apps.artilleryapp.viewmodels
 
 import com.santaev.apps.artilleryapp.data.ArtilleryWithBookmark
 import java.text.SimpleDateFormat
-import java.util.Locale
+import java.util.*
 
 class ArtilleryWithBookmarkViewModel(artilleryWithBookmark: ArtilleryWithBookmark) {
     private val artillery = checkNotNull(artilleryWithBookmark.artillery)
@@ -18,6 +18,6 @@ class ArtilleryWithBookmarkViewModel(artilleryWithBookmark: ArtilleryWithBookmar
         get() = artillery.artilleryId
 
     companion object {
-        private val dateFormat = SimpleDateFormat("MMM d, yyyy", Locale.US)
+        private val dateFormat = SimpleDateFormat("MMM d, yyyy", Locale("ru"))
     }
 }

@@ -20,8 +20,8 @@ class SeedDatabaseWorker(
         try {
             applicationContext.assets.open(ARTILLERY_DATA_FILENAME).use { inputStream ->
                 JsonReader(inputStream.reader()).use { jsonReader ->
-                    val plantType = object : TypeToken<List<Artillery>>() {}.type
-                    val artilleryList: List<Artillery> = Gson().fromJson(jsonReader, plantType)
+                    val type = object : TypeToken<List<Artillery>>() {}.type
+                    val artilleryList: List<Artillery> = Gson().fromJson(jsonReader, type)
 
                     val database = AppDatabase.getInstance(applicationContext)
                     database.artilleryDao().insertAll(artilleryList)

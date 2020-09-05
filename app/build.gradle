@@ -16,11 +16,8 @@ android {
         targetSdkVersion rootProject.targetSdkVersion
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         versionCode 1
-        versionName "0.1.6"
+        versionName "0.0.1"
         vectorDrawables.useSupportLibrary true
-
-        // Consult the README on instructions for setting up Unsplash API key
-        buildConfigField("String", "UNSPLASH_ACCESS_KEY", "\"" + getUnsplashAccess() + "\"")
     }
     buildTypes {
         release {
@@ -81,8 +78,4 @@ dependencies {
     androidTestImplementation "androidx.work:work-testing:$rootProject.workVersion"
     androidTestImplementation "com.google.truth:truth:$rootProject.truthVersion"
     testImplementation "junit:junit:$rootProject.junitVersion"
-}
-
-def getUnsplashAccess() {
-    return project.findProperty("unsplash_access_key")
 }

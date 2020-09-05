@@ -9,7 +9,7 @@ data class Artillery(
         @PrimaryKey @ColumnInfo(name = "id") val artilleryId: String,
         val name: String,
         val description: String,
-        val imageUrl: String = ""
+        val imageUrl: String? = ""
 ) {
     override fun toString() = name
 }
