@@ -33,7 +33,7 @@ object InjectorUtils {
     }
 
     fun provideArtilleryListViewModelFactory(fragment: Fragment): ArtilleryListViewModelFactory {
-        return ArtilleryListViewModelFactory(getArtilleryRepository(fragment.requireContext()), fragment)
+        return ArtilleryListViewModelFactory(getArtilleryRepository(fragment.requireContext()))
     }
 
     fun provideArtilleryDetailViewModelFactory(

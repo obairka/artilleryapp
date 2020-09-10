@@ -1,10 +1,7 @@
 package com.santaev.apps.artilleryapp.viewmodels
 
-import android.os.Bundle
-import androidx.lifecycle.AbstractSavedStateViewModelFactory
-import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
-import androidx.savedstate.SavedStateRegistryOwner
+import androidx.lifecycle.ViewModelProvider
 import com.santaev.apps.artilleryapp.data.ArtilleryRepository
 
 /**
@@ -12,16 +9,9 @@ import com.santaev.apps.artilleryapp.data.ArtilleryRepository
  */
 class ArtilleryListViewModelFactory(
         private val repository: ArtilleryRepository,
-        owner: SavedStateRegistryOwner,
-        defaultArgs: Bundle? = null
-) : AbstractSavedStateViewModelFactory(owner, defaultArgs) {
-
+) : ViewModelProvider.Factory {
     @Suppress("UNCHECKED_CAST")
-    override fun <T : ViewModel?> create(
-        key: String,
-        modelClass: Class<T>,
-        handle: SavedStateHandle
-    ): T {
-        return ArtilleryListViewModel(repository, handle) as T
+    override fun <T : ViewModel> create(modelClass: Class<T>): T {
+        return ArtilleryListViewModel(repository) as T
     }
 }
